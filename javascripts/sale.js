@@ -61,7 +61,7 @@ function subtotal() {
 function calc() {
   const sum = subtotal();
   const postage = calcPostageFromPurchase(sum);
-  window.alert(`小計は${sum}円、送料は${postage}円です。合計は${sum + postage}円です`);
+  window.alert(`${display()}\n小計は${sum}円、送料は${postage}円です。合計は${sum + postage}円です`);
   purchases = [];
   priceElement.value= "";
   numberElement.value = "";
